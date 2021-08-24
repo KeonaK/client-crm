@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  width: 154px;
+  height: 100vh;
+  background: #1633ff;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  width: 100%;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0;
+  margin-bottom: 5.125rem;
+}
+
+nav ul li a:hover {
+  background: #031b4e;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.icon__padding {
+  padding-top: 230px;
+}
