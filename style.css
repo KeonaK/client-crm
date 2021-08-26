@@ -14,6 +14,7 @@ body {
 }
 
 nav {
+  position: fixed;
   width: 154px;
   height: 100vh;
   background: #1633ff;
@@ -44,4 +45,14 @@ nav ul li a:hover {
 }
 .icon__padding {
   padding-top: 230px;
+}
+
+.dashboard__container {
+  width: 548px;
+  height: 140px;
+  margin-left: 187px;
+
+  background-color: white;
+  box-shadow: 0px 6.33449px 16.892px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
 }
