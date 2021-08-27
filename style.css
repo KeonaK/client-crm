@@ -53,11 +53,11 @@ nav ul li a:hover {
   display: flex;
 }
 .dashboard__container {
-  width: 548px;
-  height: 140px;
+  width: 450px;
+  height: 100px;
   margin-top: 60px;
   margin-left: 187px;
-  padding: 28px 61px;
+  padding: 16px 60px;
   background-color: white;
   box-shadow: 0px 6.33449px 16.892px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
@@ -65,22 +65,25 @@ nav ul li a:hover {
 
 #dashboardHeader {
   font-style: normal;
-  font-weight: 500;
-  font-size: 2.25rem;
-  line-height: 2.625rem;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 #dashboardDate {
   font-style: normal;
-  font-weight: 400;
-  font-size: 1.625rem;
+  font-weight: 300;
+  font-size: 1.25rem;
   line-height: 1.875rem;
 }
 
 #dashboardTime {
-  display: flex;
   font-style: normal;
-  font-weight: 400;
-  font-size: 3.525rem;
+  font-weight: 300;
+  font-size: 2rem;
   line-height: 1.125rem;
+}
+
+.dashDate {
+  display: flex;
+  justify-content: space-between;
 }
