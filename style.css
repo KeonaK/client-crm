@@ -57,9 +57,10 @@ nav ul li a:hover {
   height: 100px;
   margin-top: 60px;
   margin-left: 187px;
+  margin-bottom: 90px;
   padding: 16px 60px;
   background-color: white;
-  box-shadow: 0px 6.33449px 16.892px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
 }
 
@@ -86,4 +87,13 @@ nav ul li a:hover {
 .dashDate {
   display: flex;
   justify-content: space-between;
+}
+
+.toDo__container {
+  width: 1460px;
+  height: 672px;
+  margin-left: 187px;
+  background: #ffffff;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
 }
