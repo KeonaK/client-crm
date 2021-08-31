@@ -89,11 +89,54 @@ nav ul li a:hover {
   justify-content: space-between;
 }
 
-.toDo__container {
+.todo__container {
   width: 1460px;
   height: 672px;
   margin-left: 187px;
+  padding: 60px;
   background: #ffffff;
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
+}
+
+.todo__nav h2 {
+  padding-right: 200px;
+  color: #1633ff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.todo__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  width: 124px;
+  height: 35px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: white;
+  color: #031b4e;
+  border: 1px solid #031b4e;
+  border-radius: 5px;
+}
+
+.todo__btns a button {
+  margin-right: 40px;
+}
+.todo__btns a img {
+  padding: 0;
+  margin: 0;
+}
+
+.todo__labels {
+  display: flex;
+  margin: 0 25px;
+  justify-content: space-between;
+  font-size: 26px;
+  font-weight: 500;
 }
