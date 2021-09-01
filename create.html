@@ -17,9 +17,7 @@
                 <ul>
                    <li class="icon__padding">
                        <a href="index.html">
-                        <span class="iconify home" data-icon="mdi:home" style="color: #ffffff;" data-height="61">
-                            
-                        </span>
+                        <span class="iconify home" data-icon="mdi:home" style="color: #ffffff;" data-height="61"></span>
                        </a>
                    </li>
                    <li>
@@ -42,35 +40,25 @@
             </nav>
         </div>
     </div>
-
-    <section class= "dashboard">
-        <div class="dashboard__container">
-        <div id="dashboardHeader">Dashboard</div>
-        <div class="dashDate">
-            <div id="dashboardDate"></div>
-            <div id="dashboardTime"></div>
-        </div>
-        </div>
-    </section>
-
-    <section class="todo">
-        <div class="todo__container">
-            <div class="todo__nav">
-                <h2>Things to do today() </h2>
-                <div class="todo__btns">
-                    <a href=""><button>past due</button></a>
-                    <a href=""><button>upcoming</button></a>
-                    <a href=""><button>all</button></a>
-                    <a href="create.html"><img src="./createBtn.svg" alt="create button"></a>
-               </div>
-        </div>
-        <div class="todo__labels">
-            <p>Priority</p>
-            <p>Date</p>
-            <p>Task</p>
-            <p>Status</p>
+    <section>
+        <div class="create">
+            <div class="create__container">
+                <a href="index.html"><img src="backArrow.svg" alt="back arrow"></a>
+                <h2>Create a task</h2>
+                <form >
+                    <label for="priority">Priority</label>
+                    <input list="priority-list">
+                    <datalist id="priority-list">
+                      <option value="High">
+                      <option value="Medium">
+                      <option value="Low">
+                    </datalist>
+                  </form>
+            </div>
         </div>
     </section>
+
+  
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.0.2/luxon.min.js"></script>
     <script src="script.js"></script>
