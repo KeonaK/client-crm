@@ -46,13 +46,36 @@
                 <a href="index.html"><img src="backArrow.svg" alt="back arrow"></a>
                 <h2>Create a task</h2>
                 <form >
-                    <label for="priority">Priority</label>
-                    <input list="priority-list">
+                   <div>
+                    <label for="priority" >Priority</label>
+                    <input list="priority-list" id="priority" required>
                     <datalist id="priority-list">
                       <option value="High">
                       <option value="Medium">
                       <option value="Low">
                     </datalist>
+                </div>
+                <div>
+                    <label for="date" >Date due</label>
+                    <input type="date" id="date" required>
+                </div>
+                    <div id="task">
+                    <label for="task">Task</label>
+                    <textarea name="task" id="taskCreated" rows="8" cols="100" required minlength="5" maxlength="100"></textarea>
+                    </div>
+
+                    <div>
+                    <label for="status">Status</label>
+                    <input list="status-list" id="status" required>
+                    <datalist id="status-list">
+                        <option value="Not started"></option>
+                        <option value="In progress"></option>
+                        <option value="Completed"></option>
+                    </datalist>
+                </div>
+                <div>
+                <button type="submit" id=btn >create</button>
+               </div>
                   </form>
             </div>
         </div>

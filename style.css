@@ -161,3 +161,24 @@ button {
   font-size: 1.5;
   line-height: 42px;
 }
+
+label {
+  display: block;
+  color: #031b4e;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+input {
+  width: 331px;
+  height: 59px;
+  box-shadow: 0px 5.28358px 14.0896px 3.52239px rgba(0, 0, 0, 0.05);
+  border-radius: 4.40299px;
+  border: none;
+}
+
+textarea {
+  box-shadow: 0px 5.28358px 14.0896px 3.52239px rgba(0, 0, 0, 0.05);
+  border-radius: 4.40299px;
+  border: none;
+}
