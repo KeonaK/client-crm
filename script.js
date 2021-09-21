@@ -1,7 +1,8 @@
 const dateDisplayEl = document.getElementById("dashboardDate");
 const timeDisplayEl = document.getElementById("dashboardTime");
+const form = document.getElementById("form");
 
-const btnEl = document.getElementById("btn");
+const btnEl = document.getElementById("#btnEl");
 
 const DateTime = luxon.DateTime;
 
@@ -29,17 +30,17 @@ const addTask = (event) => {
   event.preventDefault(); // prevents the form from submitting and reloading the page
   let task = {
     id: Date.now(),
-    priority: document.getElementById("priority").value,
-    date: document.getElementById("date").value,
-    taskCreated: document.getElementById("taskCreated").value,
-    status: document.getElementById("status").value,
+    priority: document.getElementById("priority").value.trim(),
+    date: document.getElementById("date").value.trim(),
+    taskCreated: document.getElementById("taskCreated").value.trim(),
+    status: document.getElementById("status").value.trim(),
   };
 
   tasks.push(task); //add the new task to our tasks object
-  document.querySelector("form").reset(); //clears the form for the next task
+  console.log({ tasks });
 
   //turns object into a string to add it to local storage
-  localStorage.setItem("taskList", JSON.stringify(tasks));
+  window.localStorage.setItem("taskList", JSON.stringify(tasks));
 };
 
-btnEl.addEventListener("click", addTask);
+form.addEventListener("submit", addTask);
